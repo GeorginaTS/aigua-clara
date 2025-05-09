@@ -1,92 +1,103 @@
 body {
-    font-family: "Arial", sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  header,
-  footer {
-    background: #267c5d;
-    color: white;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header,
+footer {
+  background: #30758b;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+main {
+  padding: 2em;
+  margin: auto;
+  background: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+}
+h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 1em;
+}
+h2,
+h3 {
+  color: #1e485d;
+}
+section {
+  margin-bottom: 2em;
+}
+ul {
+  padding-left: 1.5em;
+}
+img {
+  max-width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1em;
+}
+.data-box {
+  background: #c1e0e3;
+  border-left: 5px solid #4f9ecc;
+  padding: 1em;
+  margin: 1em 0;
+}
+.img-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1em 0;
+}
+#curiositats {
+  position: relative;
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #397882a2;
+  padding: 1em 1em;
+  border-radius: 1em;
+}
+#curiositats > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+#curiositats > div > article {
+  border: 1px solid red;
+  padding: 1em;
+  max-width: 29%;
+  background-color: #fff;
+}
+#quefem {
+  color: #1e485d;
+  background-color: #397882a2;
+  padding: 1em;
+  border-radius: 1em;
+  & article {
+
+    margin: 1em;
     padding: 1em;
-    text-align: center;
-  }
-  main {
-    padding: 2em;
-    margin: auto;
-    background: white;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2em;
-  }
-  h1 {
-    color: white;
-    font-size: 2.5em;
-    font-weight: bolder;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  h2,
-  h3 {
-    color: #1e5d44;
-  }
-  section {
-    margin-bottom: 2em;
-  }
-  ul {
-    padding-left: 1.5em;
-  }
-  img {
-    max-width: 50%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 1em;
-  }
-  .data-box {
-    background: #e8f5e9;
-    border-left: 5px solid #4caf50;
-    padding: 1em;
-    margin: 1em 0;
-  }
-  .img-box {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1em 0;
-  }
-  #curiositats {
-    position: relative;
-    grid-row: span 2;
-    grid-column: span 2;
-    background-color: #3b594da2;
-    padding: 1em 1em;
-    border-radius: 1em;
-  }
-  #curiositats > div {
-    display: flex;
-    flex-wrap: wrap;
-    
-    gap:1em;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  #curiositats > div >  article {
-    border: 1px solid red;
-    padding: 1em;
-    max-width:29%;
     background-color: #fff;
   }
-  #quefem{
-
-    background-color: #3b594da2;
+}
+#riscos {
+  grid-column: span 2;
+  color: #1e485d;
+  background-color: #397882a2;
+  padding: 1em;
+  border-radius: 1em;
+  & article {
+    margin: 1em;
     padding: 1em;
-    border-radius: 1em;
-    & article {
-        margin:1em;
-        padding: 1em;
-        background-color: #fff;
-  } }
+    background-color: #fff;
+  }
+}
