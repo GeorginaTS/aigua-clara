@@ -21,7 +21,13 @@ body {
     grid-template-columns: 2fr 1fr;
     gap: 2em;
   }
-  h1,
+  h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 1em;
+  }
   h2,
   h3 {
     color: #1e5d44;
@@ -34,7 +40,8 @@ body {
   }
   img {
     max-width: 50%;
-    height: auto;
+    height: 300px;
+    object-fit: cover;
     border-radius: 1em;
   }
   .data-box {
@@ -45,7 +52,7 @@ body {
   }
   .img-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 1em 0;
   }
@@ -56,13 +63,18 @@ body {
     background-color: #3b594da2;
     padding: 1em 1em;
     border-radius: 1em;
+  }
+  #curiositats > div {
     display: flex;
     flex-wrap: wrap;
+    
     gap:1em;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
   }
-  #curiositats > article {
+  #curiositats > div >  article {
     border: 1px solid red;
     padding: 1em;
     max-width:29%;
