@@ -33,7 +33,7 @@ body {
     padding-left: 1.5em;
   }
   img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     border-radius: 1em;
   }
@@ -43,25 +43,33 @@ body {
     padding: 1em;
     margin: 1em 0;
   }
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+  }
   #curiositats {
+    position: relative;
+    grid-row: span 2;
     grid-column: span 2;
     background-color: #3b594da2;
-    padding: 1em;
+    padding: 1em 1em;
     border-radius: 1em;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap:1em;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
   }
   #curiositats > article {
-    width: 20%;
+    border: 1px solid red;
     padding: 1em;
+    max-width:29%;
     background-color: #fff;
   }
   #quefem{
-    grid-row: span 4;
+
     background-color: #3b594da2;
     padding: 1em;
     border-radius: 1em;
