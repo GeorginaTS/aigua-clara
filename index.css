@@ -1,14 +1,22 @@
+
+:root {
+  --main-blue: #4a8bab;
+  --main-blue-light: #d6eaf3;
+  --main-blue-dark: #28627f;  
+  --main-white: #f4f4f4;
+  --main-black: #333;  
+}
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--main-white);
+  color: var(--main-black);
 }
 header,
 footer {
-  background: #30758b;
+  background: var(--main-blue);
   color: white;
   padding: 1em;
   text-align: center;
@@ -30,7 +38,10 @@ h1 {
 }
 h2,
 h3 {
-  color: #1e485d;
+  color: var(--main-blue);
+}
+hr{
+  border: 1px solid var(--main-blue-light);
 }
 section {
   margin-bottom: 2em;
@@ -45,8 +56,8 @@ img {
   border-radius: 1em;
 }
 .data-box {
-  background: #c1e0e3;
-  border-left: 5px solid #4f9ecc;
+  background-color: var(--main-blue-light);
+  border-left: 5px solid var(--main-blue-dark);
   padding: 1em;
   margin: 1em 0;
 }
@@ -57,10 +68,9 @@ img {
   margin: 1em 0;
 }
 #curiositats {
-  position: relative;
   grid-row: span 2;
   grid-column: span 2;
-  background-color: #397882a2;
+  background-color: var(--main-blue);
   padding: 1em 1em;
   border-radius: 1em;
 }
@@ -69,17 +79,18 @@ img {
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 #curiositats > div > article {
-  border: 1px solid red;
+  flex: 1 1 30%;
   padding: 1em;
   max-width: 29%;
+  height: 100%;
   background-color: #fff;
 }
 #quefem {
-  color: #1e485d;
-  background-color: #397882a2;
+  color: var(--main-blue);
+  background-color: var(--main-blue);
   padding: 1em;
   border-radius: 1em;
   & article {
@@ -90,12 +101,11 @@ img {
 #riscos {
   grid-column: span 2;
   color: white;
-  background-color: #397882a2;
+  background-color: var(--main-blue);
   padding: 1em;
   border-radius: 1em;
   display : flex;
   justify-content: space-around;
-
   & article {
     width: 25%;
     border-left: 5px solid #ffffff;
