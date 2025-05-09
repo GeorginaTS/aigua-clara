@@ -83,21 +83,25 @@ img {
   padding: 1em;
   border-radius: 1em;
   & article {
-
-    margin: 1em;
     padding: 1em;
     background-color: #fff;
   }
 }
 #riscos {
   grid-column: span 2;
-  color: #1e485d;
+  color: white;
   background-color: #397882a2;
   padding: 1em;
   border-radius: 1em;
+  display : flex;
+  justify-content: space-around;
+
   & article {
-    margin: 1em;
+    width: 25%;
+    border-left: 5px solid #ffffff;
     padding: 1em;
-    background-color: #fff;
+    & h2 {
+      color:white;
+    }
   }
 }
